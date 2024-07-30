@@ -6,6 +6,18 @@ app.listen(port, (req, res) => {
     console.log('Listening on port ' + port)
 })
 
-app.get('/', (req, res) => {
-    console.log('Use routing /')
+app.get('/user', (req, res) => {
+    console.log('get User')
+})
+
+app.post('/user', (req, res) => {
+    console.log('post User')
+})
+
+app.patch('/user', (req, res) => {
+    console.log('patch User')
+})
+
+app.delete('/user', (req, res) => {
+    console.log('delete User')
 })
